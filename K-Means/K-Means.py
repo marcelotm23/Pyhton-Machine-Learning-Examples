@@ -18,6 +18,14 @@ k=len(np.unique(y))
 samples, features=data.shape
 
 # Scoring function
+"""
+homo = homogeneity score
+compl = completeness score
+v-meas = V measure
+ARI = adjusted Rand index
+AMI = adjusted mutual information
+silhouette = silhouette coefficient
+"""
 def bench_k_means(estimator, name, data):
     estimator.fit(data)
     print('%-9s\t%i\t%.3f\t%.3f\t%.3f\t%.3f\t%.3f\t%.3f'
